@@ -12,6 +12,9 @@
 		<link rel="stylesheet" href="<c:url value='/css/style.css'/>"/>
 	</head> 
 	<body>
+	<div>
+	<img alt="Vendor Entry" src="<c:url value='/images/Logo.jpg'/>">
+	</div>
 		<div>
 			<h2>Vendor Entry</h2>
 		</div>
