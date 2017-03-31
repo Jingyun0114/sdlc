@@ -31,6 +31,16 @@ input{
 	margin-left:20px;
 }
 
+select{
+	margin-top:5px;
+	margin-bottom:5px;
+	display:inline-block;
+	display:inline;
+	zoom:1;
+	vertical-align:middle;
+	margin-left:20px;
+}
+
 h2{
 	color:#336699;
 }
@@ -46,4 +56,11 @@ input[type='submit']{
 
 div#form{
 	width:60%;
+}
+
+.message{
+	color:green;
+	font-weight:bold;
+	font-style:italic;
+	font-size:10pt;
 }

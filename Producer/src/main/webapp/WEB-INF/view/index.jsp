@@ -12,14 +12,19 @@
 		<link rel="stylesheet" href="<c:url value='/css/style.css'/>"/>
 	</head> 
 	<body>
-	<div>
-	<img alt="Vendor Entry" src="<c:url value='/images/Logo.jpg'/>">
-	</div>
+		<div>
+			<img alt="Vendor Entry" src="<c:url value='/images/Logo.jpg'/>">
+		</div>
 		<div>
 			<h2>Vendor Entry</h2>
 		</div>
 		<div id="form">
 			<form:form modelAttribute="vendor" action="vendor">
+				<div class="message">
+					<c:if test="${!empty message}">
+						<c:out value="${message}"></c:out>						
+					</c:if>				
+				</div>
 				<fieldset>
 					<legend>Vendor Information</legend>
 					<div>
@@ -44,7 +49,10 @@
 					</div>
 					<div>
 						<label for="state">State</label>
-						<form:input path="state"/>			
+						<form:select path="state">
+							<form:option value="Alabama">Alabama</form:option>
+							<form:option value="Pennsylvania">Pennsylvania</form:option>
+						</form:select>			
 					</div>
 					<div>
 						<label for="zipCode">Zip Code</label>

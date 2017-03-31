@@ -20,7 +20,7 @@ public class MessageService {
 		Gson gson = new Gson();
 		String json = gson.toJson(vendor);
 		logger.info("Message: " + json);
-		messageSender.send();
+		messageSender.send(json);
 	}
 
 }

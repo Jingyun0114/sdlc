@@ -9,11 +9,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     
     <context:component-scan base-package="com.zjy"/>  
-
-
     <mvc:annotation-driven />
-
-
 
     <bean id="connFactory"
     	class="org.apache.activemq.ActiveMQConnectionFactory">
