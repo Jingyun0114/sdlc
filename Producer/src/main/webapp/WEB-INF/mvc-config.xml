@@ -10,7 +10,7 @@
          <context:component-scan
             base-package="org.springframework.samples.web"/>  -->
 
-	<context:component-scan base-package="com.zjy"/> 
+    <context:component-scan base-package="com.zjy"/>  
     <mvc:annotation-driven />
     <bean id="connFactory"
     	class="org.apache.activemq.ActiveMQConnectionFactory">
@@ -25,11 +25,10 @@
     	<property name="connectionFactory" ref="connFactory"></property>
     	<property name="defaultDestination" ref="defaultDestination"></property>
     </bean>
-    
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	        <!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
 	        <property name="prefix" value="/WEB-INF/view/"/>
 	        <property name="suffix" value=".jsp"/>
 	</bean>
-
+<mvc:resources location="/css/" mapping="/css/**"/>
 </beans>

@@ -3,7 +3,7 @@ package com.zjy.jms.producer.model;
 public class Vendor {
 	private String vendorName;
 	private String firstName;
-	private String lastrName;
+	private String lastName;
 	private String address;
 	private String city;
 	private String state;
@@ -22,11 +22,11 @@ public class Vendor {
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
-	public String getLastrName() {
-		return lastrName;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastrName(String lastrName) {
-		this.lastrName = lastrName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	public String getAddress() {
 		return address;
@@ -67,7 +67,7 @@ public class Vendor {
 	@Override
 	public String toString() {
 		return "Vendor [vendorName=" + getVendorName() + ", firstName=" + getFirstName()
-				+ ", lastrName=" + getLastrName() + ", address=" + getAddress()
+				+ ", lastrName=" + getLastName() + ", address=" + getAddress()
 				+ ", city=" + getCity() + ", state=" + getState() + ", zipCode="
 				+ getZipCode() + ", phoneNumber=" + getPhoneNumber() + ", email=" + getEmail()
 				+ "]";
